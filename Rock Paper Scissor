@@ -1,0 +1,41 @@
+import random 
+
+def game():
+    x = ['rock','paper','scissor']
+    y = random.choice(x)
+    z = random.choice(x)
+    if y == 'rock' and z =='paper':
+        print("User 1: {}".format(y))
+        print("User 2: {}".format(z))
+        print("User 2 Wins")
+    
+    elif y == 'paper' and z =='scissor':
+        print("User 1: {}".format(y))
+        print("User 2: {}".format(z))
+        print("User 2 Wins")
+    
+    elif y == 'scissor' and z =='rock':
+        print("User 1: {}".format(y))
+        print("User 2: {}".format(z))
+        print("User 2 Wins")
+        
+    elif y == 'paper' and z =='rock':
+        print("User 1: {}".format(y))
+        print("User 2: {}".format(z))
+        print("User 1 Wins")
+        
+    elif y == 'scissor' and z =='paper':
+        print("User 1: {}".format(y))
+        print("User 2: {}".format(z))
+        print("User 1 Wins")
+    
+    elif y == 'rock' and z =='scissor':
+        print("User 1: {}".format(y))
+        print("User 2: {}".format(z))
+        print("User 1 Wins")
+    elif y==z or z ==y:
+        print("User 1: {}".format(y))
+        print("User 2: {}".format(z))
+        print("Lol. It is a tie")
+
+game()
